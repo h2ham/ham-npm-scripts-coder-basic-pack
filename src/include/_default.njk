@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>{% if title %}{{ title }}{% else %}タイトル{% endif %}</title>
+</head>
+<body>
+{% include "_header.njk" %}
+
+{% block content %}{% endblock %}
+
+{% include "_footer.njk" %}
+</body>
+</html>
